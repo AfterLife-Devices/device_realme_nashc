@@ -15,20 +15,30 @@ $(call inherit-product, device/realme/nashc/device.mk)
 # Inherit some common Afertlife stuff.
 $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
+# Boot animation
+scr_resolution := 1440
+TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 3120
+TARGET_BOOT_ANIMATION_RES := 1440
 
-# disable/enable blur support, default is false
-TARGET_ENABLE_BLUR := true
-
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# AfterLify
-AFTERLIFE_BUILD_TYPE := UNOFFICIAL
+# AfterLife Flags
 AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
+USE_PIXEL_CHARGING =: true
+AFTERLIFE_MAINTAINER := "Eren Yeager"
+TARGET_SUPPORTS_QUICK_TAP := false
+AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
+AFTERLIFE_EXTRA := true
+BUILD_GALLERYGO := true
+BUILD_GMAIL := true
+BUILD_AOSP_CAMERA := false
+TARGET_USE_MOTO_CALCULATOR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_SUPPORTS_TOUCHGESTURES := true
 
-PRODUCT_NAME := lineage_nashc
+PRODUCT_NAME := afterlife_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
