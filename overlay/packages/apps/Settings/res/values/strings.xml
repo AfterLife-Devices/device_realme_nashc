@@ -12,8 +12,8 @@
 -->
 
 <resources>
-   <string name="maintainer_git_username">;-;</string>
+   <string name="maintainer_git_username">venudinesh</string>
     <string name="maintainer_tele_username">sukuna_me</string>
-    <string name="maintainer_ig_username">'_'</string>
-    <string name="maintainer_fb_username">-_-</string>
+    <string name="maintainer_ig_username">mello.x</string>
+    <string name="maintainer_fb_username">eren</string>
 </resources>
